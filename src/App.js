@@ -1,10 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react'
 import StartPage from "./components/StartPage";
+import Quiz from "./components/Quiz";
 
 export default function App() {
-  return (
+    const [swapPage, setSwapPage] = useState(false)
+
+    function changePage() {
+        setSwapPage( prevPage => !prevPage)
+    }
+
+    return (
     <div className="app--container">
-          <StartPage />
+        {swapPage ? <Quiz /> : <StartPage handleSwap={changePage} />}
     </div>
   )
 }
