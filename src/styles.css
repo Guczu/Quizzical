@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  background-color: #BFD7ED;
+}
+
+.app--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.startpage--container {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Inter', sans-serif;
+}
+
+.startpage--title {
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 700;
+  font-size: 72px;
+  color: #003B73;
+  margin-bottom: 25px;
+}
+
+.startpage--button {
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  background-color: #0074B7;
+  color: white;
+  font-family: 'Karla';
+  font-size: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  cursor: pointer
+}
+
